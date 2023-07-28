@@ -1,0 +1,15 @@
+<h3>test</h3>
+<%= console.log( member ); %>
+<% 
+    for(var i=0; i<member.length; i++){
+        console.log(member[i].id);
+        console.log(member[i].name);
+        console.log(member[i].addr);
+    }
+%>
+
+<% member.forEach(mem => { %>
+    id: <%= mem.id %> <br>
+    name: <%= mem.name %> <br>
+    addr: <%= mem.addr %> <hr>
+<% }); %>
